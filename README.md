@@ -1,6 +1,6 @@
-# 🦕 GroundingDINO - Quick Start Guide
+# 🦕 Dino-ImgAlgn - GroundingDINO Object Detection
 
-This folder contains everything you need to run the GroundingDINO object detection model on your Mac.
+A ready-to-use setup for GroundingDINO object detection with helper scripts, comprehensive documentation, and easy tuning options. Detect objects in images using natural language descriptions!
 
 ## 📦 What's Inside
 
@@ -14,9 +14,10 @@ This folder contains everything you need to run the GroundingDINO object detecti
 
 ## 🚀 Quick Start (3 Steps)
 
-### Step 1: Run Setup
+### Step 1: Clone and Run Setup
 ```bash
-cd /Users/nestor/armando_new/GroundingDINO
+git clone https://github.com/mvillafranca98/Dino-ImgAlgn.git
+cd Dino-ImgAlgn
 ./setup_and_run.sh
 ```
 
@@ -27,12 +28,19 @@ This will:
 
 ### Step 2: Activate Environment
 ```bash
-source /Users/nestor/armando_new/GroundingDINO/.venv/bin/activate
+source .venv/bin/activate
 ```
 
 ### Step 3: Run Detection
 ```bash
 python run_model.py -i YOUR_IMAGE.jpg -t "person . car . dog ."
+```
+
+**Example output:**
+```
+✅ Detection complete! Found 2 objects.
+1. person: confidence = 0.892
+2. car: confidence = 0.856
 ```
 
 That's it! Results will be saved to the `outputs/` folder.
